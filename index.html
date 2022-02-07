@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/script.js"></script>
 </head>
@@ -18,36 +21,46 @@
 </div>
 
 <main class="right-container">
-    <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
-    <br>
-    <h2>You <em>know</em> you want to.</h2>
-    
-    <form action="" id="sign-up">
-        <div>
-            <label for="">First Name</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Last Name</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Email</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Phone Number</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Password</label>
-            <input type="text">
-        </div> 
-        <div>
-            <label for="">Confirm Password</label>
-            <input type="text">
-        </div>
+    <div id="pitch">
+        <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
+        <h1>You <em>know</em> you want to.</h1>
+    </div>
+    <form id="sign-up" action="submit">
+        <h1 id="doIt">Let's do this!</h1>
+        <ul id="leftForm">
+            <li>
+                <label for="firstName">First Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email">
+            </li>
+            <li>
+                <label for="password">Password</label>
+                <input type="password">
+            </li>
+        </ul>
+        <ul id="rightForm">
+            <li>
+                <label for="lastName">Last Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="text">
+            </li>
+        </ul>
     </form>
+    <section class="createOrSignIn">
+        <button id="createAccountBtn">Create Account</button>
+        <p class="logIn">Already have an account? <a href="#">Log in</a>.</p>
+    </section>
+    
 </main>
 <!-- Left container 
 50vh width -->
